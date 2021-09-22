@@ -52,4 +52,29 @@ public class Alarm {
 	
 		
 	}
+	public static void Addalarm1() throws InterruptedException
+	{
+		Thread.sleep(2000);
+		AlarmClockSession.findElementByName("Alarm").click();
+		
+		Thread.sleep(4000);
+		AlarmClockSession.findElementByName("Add an alarm").click();
+		
+		AlarmClockSession.findElementByAccessibilityId("HourPicker").sendKeys("04");
+	
+		AlarmClockSession.findElementByAccessibilityId("MinutePicker").sendKeys("3");
+	
+		AlarmClockSession.findElementByName("Alarm name").clear();
+		AlarmClockSession.findElementByName("Alarm name").sendKeys("test");
+
+		AlarmClockSession.findElementByAccessibilityId("RepeatCheckBox").click();
+
+		AlarmClockSession.findElementByName("Tuesday").click();
+	
+		AlarmClockSession.findElementByName("Save").click();
+
+
+	
+		
+	}
 }

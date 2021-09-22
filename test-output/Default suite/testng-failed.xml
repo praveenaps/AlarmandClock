@@ -5,7 +5,7 @@
     <classes>
       <class name="alarm.clock.Alarmtest">
         <methods>
-          <include name="add"/>
+          <include name="add1"/>
           <include name="setup"/>
         </methods>
       </class> <!-- alarm.clock.Alarmtest -->
